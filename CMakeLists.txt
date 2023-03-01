@@ -37,6 +37,11 @@ find_package(tf2_msgs REQUIRED)
 link_directories(${PCL_LIBRARY_DIRS})
 include_directories(${PCL_INCLUDE_DIRS})
 include_directories(include)
+include_directories(/opt/ros/humble/include/tf2_geometry_msgs)
+include_directories(/opt/ros/humble/include/tf2)
+include_directories(/opt/ros/humble/include/tf2_ros)
+include_directories(/opt/ros/humble/include/rclcpp_components)
+include_directories(/opt/ros/humble/include/class_loader)
 
 add_library(octomap_server2 SHARED
   src/octomap_server.cpp
